@@ -1,0 +1,197 @@
+.currentForecast {
+  .currentForecast__location {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    @include maxq(360px) {
+      // font-size: 1.2rem;
+      margin-top: 0rem;
+      margin-bottom: 1.5rem;
+    }
+    @include mq(361px) {
+      font-size: 1.2rem;
+    }
+    @include mq(400px) {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+    @include mq(768px) {
+      font-size: 0.875rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+  }
+
+  .currentForecast__conditions {
+    width: 100%;
+    margin: auto auto 0rem;
+    display: grid;
+    font-size: 1.3rem;
+    @include maxq(360px) {
+      font-size: 1.5rem;
+    }
+    @include mq(375px) {
+      font-size: 1.7rem;
+    }
+    @include mq(400px) {
+      font-size: 2rem;
+    }
+    @include mq(768px) {
+      font-size: 1.2rem;
+      margin-top: 0rem;
+    }
+
+    .temp {
+      @include flexCenter;
+      grid-row: 1 / span 3;
+      grid-column: 1 / span 2;
+      font-size: 6rem;
+      letter-spacing: 0;
+      text-shadow: 1px 0 5px $text-shadow-color;
+      position: relative;
+      font-size: 5rem;
+      @include maxq(360px) {
+        font-size: 3.5rem;
+      }
+      @include mq(400px) {
+        font-size: 5.2rem;
+      }
+      @include mq(768px) {
+        font-size: 5.75rem;
+      }
+
+      .unit {
+        font-size: 1.65rem;
+        color: $fadecolor;
+        text-shadow: none;
+        position: absolute;
+        top: 55%;
+        left: 85%;
+        @include mq(768px) {
+          left: 75%;
+        }
+      }
+    }
+
+    .icon {
+      @include flexCenter;
+      grid-row: 1 / span 1;
+      grid-column: 3 / span 2;
+
+      i {
+        font-size: 3rem;
+        text-shadow: 1px 0 5px $text-shadow-color;
+        @include maxq(360px) {
+          font-size: 1.5rem;
+        }
+        @include mq(768px) {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .maxTemp {
+      @include flexCenter;
+      grid-row: 2 / span 1;
+      grid-column: 3 / span 2;
+      // font-size: 1rem;
+      @include maxq(360px) {
+        font-size: 1rem;
+      }
+      @include mq(361px) {
+        font-size: 1.2rem;
+      }
+      @include mq(400px) {
+        font-size: 1.5rem;
+      }
+      @include mq(768px) {
+        font-size: 1.1rem;
+      }
+    }
+
+    .minTemp {
+      @include flexCenter;
+      align-self: start;
+      grid-row: 3 / span 1;
+      grid-column: 3 / span 2;
+      color: $fadecolor;
+      // font-size: 1rem;
+      @include maxq(360px) {
+        font-size: 1rem;
+      }
+      @include mq(361px) {
+        font-size: 1.2rem;
+      }
+      @include mq(400px) {
+        font-size: 1.5rem;
+      }
+      @include mq(768px) {
+        font-size: 1.1rem;
+      }
+    }
+
+    .desc {
+      @include flexCenter;
+      grid-row: 4 / span 1;
+      grid-column: 1 / span 4;
+      padding-top: 0.5rem;
+      @include maxq(360px) {
+        margin-top: 1rem;
+      }
+      @include mq(361px) {
+        margin-top: 2rem;
+      }
+      @include mq(768px) {
+        margin-top: 0rem;
+      }
+      @include mqMaxWMinH(1024px, 650px) {
+        margin-top: 1.5rem;
+      }
+      @include mqh(1080px) {
+        margin-top: 1.5rem;
+      }
+    }
+
+    .feels {
+      @include flexCenter;
+      grid-row: 5 / span 1;
+      grid-column: 1 / span 4;
+      padding-top: 0.5rem;
+      font-weight: normal;
+    }
+
+    .humidity {
+      @include flexCenter;
+      // display: none;
+      grid-row: 6 / span 1;
+      grid-column: 1 / span 4;
+      padding-top: 0.5rem;
+      font-weight: normal;
+      color: $fadecolor;
+      @include mqMaxWMinH(1024px, 700px) {
+        @include flexCenter;
+      }
+      @include mqh(1080px) {
+        @include flexCenter;
+      }
+    }
+
+    .wind {
+      // display: none;
+      @include flexCenter;
+      grid-row: 7 / span 1;
+      grid-column: 1 / span 4;
+      padding-top: 0.5rem;
+      font-weight: normal;
+      color: $fadecolor;
+      @include mqMaxWMinH(1024px, 700px) {
+        @include flexCenter;
+      }
+      @include mqh(1080px) {
+        @include flexCenter;
+      }
+    }
+  }
+}

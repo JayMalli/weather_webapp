@@ -1,0 +1,15 @@
+{
+  "name": "wether_webapp",
+  "version": "1.0.0",
+  "description": "A weather WebApp which shows the current climate details as well as six day forecasting.",
+  "main": "index.html",
+  "dependencies": {
+    "firebase": "^9.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jay Malli",
+  "license": "ISC"
+}

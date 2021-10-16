@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathwer WebApp SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="js/signup.js" type="module"></script>
+</head>
+<body>
+ <div class="signup_container">
+     <section class="signup_content">
+         <!-- <p>hello from login</p> -->
+         <div class="hero">
+           <div class="upper_hero">
+               <div class="icon">
+                   <i class="fas fa-user"></i>
+               </div>
+            <h1>Sign Up</h1>
+           </div>            
+           <div class="lower_hero">
+               <form role="log" id="signup__form" method="post">
+                <div class="form_input">
+                    <span class="form_icon">
+                     <i class="fas fa-user"></i>
+                    </span>
+                    <span class="form__input">
+                        <input type="text" placeholder="Username" id="signup__username" required>
+                    </span>
+                </div>   
+                <div class="form_input">
+                       <span class="form_icon">
+                        <i class="fas fa-envelope"></i>
+                       </span>
+                       <span class="form__input">
+                           <input type="email" placeholder="Email" id="signup__email" required>
+                       </span>
+                   </div>
+                   <div class="form_input">
+                       <span class="form_icon">
+                        <i class="fas fa-unlock"></i>
+                       </span>
+                       <span class="form__input">
+                           <input type="password" placeholder="Password" id="signup__password" required>
+                       </span>
+                   </div>
+                   <button class="form_btn" id="login__btn" type="submit">Sign Up</button>
+                   <p>Have an account? <span><a href="index.html">Login</a></span></p>
+               </form>
+           </div>            
+         </div>
+     </section>
+ </div>
+ </body>
+</html>

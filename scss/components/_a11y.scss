@@ -1,0 +1,52 @@
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  background: $text-shadow-color;
+  padding: 14px;
+  z-index: 1;
+  color: $font-color;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  top: auto;
+  left: auto;
+}
+
+.error_message {
+  text-align: center;
+  font-size: 1rem;
+  color: red;
+  font-weight: normal;
+  display: none;
+  transition: all 0.3s linear;
+}
+
+.show {
+  display: block;
+}
+
+.logout_icon {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  cursor: pointer;
+  display: none;
+  @include mq(1024px) {
+    display: block;
+  }
+
+  i {
+    font-size: 2rem;
+    transition: all 0.3s linear;
+  }
+  i:hover {
+    transform: scale(1.1);
+  }
+}
