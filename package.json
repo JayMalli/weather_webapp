@@ -4,12 +4,22 @@
   "description": "A weather WebApp which shows the current climate details as well as six day forecasting.",
   "main": "index.html",
   "dependencies": {
-    "firebase": "^9.1.2"
+    "firebase": "^9.1.2",
+    "node-fetch": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jay Malli",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayMalli/weather_webapp.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/JayMalli/weather_webapp/issues"
+  },
+  "homepage": "https://github.com/JayMalli/weather_webapp#readme"
 }
