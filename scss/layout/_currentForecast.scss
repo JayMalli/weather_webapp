@@ -20,7 +20,7 @@
     @include mq(768px) {
       font-size: 0.875rem;
       margin-top: 0rem;
-      margin-bottom: 0rem;
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -39,7 +39,7 @@
       font-size: 2rem;
     }
     @include mq(768px) {
-      font-size: 1.2rem;
+      font-size: 0.875rem;
       margin-top: 0rem;
     }
 
@@ -59,7 +59,7 @@
         font-size: 5.2rem;
       }
       @include mq(768px) {
-        font-size: 5.75rem;
+        font-size: 4rem;
       }
 
       .unit {
@@ -107,7 +107,7 @@
         font-size: 1.5rem;
       }
       @include mq(768px) {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
       }
     }
 
@@ -128,7 +128,7 @@
         font-size: 1.5rem;
       }
       @include mq(768px) {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
       }
     }
 
@@ -146,12 +146,12 @@
       @include mq(768px) {
         margin-top: 0rem;
       }
-      @include mqMaxWMinH(1024px, 650px) {
-        margin-top: 1.5rem;
-      }
-      @include mqh(1080px) {
-        margin-top: 1.5rem;
-      }
+      // @include mqMaxWMinH(1024px, 650px) {
+      //   margin-top: 1.5rem;
+      // }
+      // @include mqh(1080px) {
+      //   margin-top: 1.5rem;
+      // }
     }
 
     .feels {

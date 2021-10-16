@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A weather WebApp which shows the current climate details as well as six day forecasting.",
   "main": "index.html",
+  "type": "module",
   "dependencies": {
     "firebase": "^9.1.2",
     "node-fetch": "^3.0.0"

@@ -8,6 +8,8 @@ html {
   background-color: $background-color;
   background-image: url("../img/clouds.jpg");
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-blend-mode: overlay;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
