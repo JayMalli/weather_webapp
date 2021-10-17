@@ -26,22 +26,6 @@ export const getweatherFromCoords = async (locationObj) => {
   } catch {
     console.error(err);
   }
-
-  // const urlDataObj = {
-  //   lat: locationObj.getLat(),
-  //   lon: locationObj.getLon(),
-  //   units: locationObj.getUnit(),
-  // };
-  // try {
-  //   const weatherStream = await fetch("./.netlify/functions/get_weather", {
-  //     method: "POST",
-  //     body: JSON.stringify(urlDataObj),
-  //   });
-  //   const weatherJson = await weatherStream.json();
-  //   return weatherJson;
-  // } catch (err) {
-  //   console.log(err);
-  // }
 };
 
 export const getCoordsFromApi = async (entryText, units) => {
@@ -58,21 +42,6 @@ export const getCoordsFromApi = async (entryText, units) => {
   } catch (err) {
     console.error(err.stack);
   }
-
-  // const urlDataObj = {
-  //   text: entryText,
-  //   units: units,
-  // };
-  // try {
-  //   const dataStream = await fetch("./.netlify/functions/get_coords", {
-  //     method: "POST",
-  //     body: JSON.stringify(urlDataObj),
-  //   });
-  //   const jsonData = await dataStream.json();
-  //   return jsonData;
-  // } catch (err) {
-  //   console.error(err);
-  // }
 };
 
 export const cleanText = (text) => {

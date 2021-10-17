@@ -52,7 +52,6 @@ export const SignUp = async (username, email, password) => {
       console.log(errorMessage);
       const message = document.getElementById("error_message");
       message.classList.add("show");
-      // ..
     });
 };
 

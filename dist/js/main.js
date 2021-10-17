@@ -92,7 +92,7 @@ const gesoSuccess = (position) => {
   const myCoordObj = {
     lat: position.coords.latitude,
     lon: position.coords.longitude,
-    name: `Lat:${position.coords.latitude} Long:${position.coords.longitude}`,
+    name: `Lat:${position.coords.latitude}  Long:${position.coords.longitude}`,
   };
 
   // set location object

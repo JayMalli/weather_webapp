@@ -34,19 +34,21 @@
 
 .logout_icon {
   position: absolute;
-  top: 5%;
+  top: 7%;
   right: 2%;
   cursor: pointer;
   display: none;
+  transition: all 0.3s linear;
+  font-size: 1.25rem;
   @include mq(1024px) {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
   i {
-    font-size: 2rem;
-    transition: all 0.3s linear;
+    margin-right: 0.5rem;
   }
-  i:hover {
+  &:hover {
     transform: scale(1.1);
   }
 }
