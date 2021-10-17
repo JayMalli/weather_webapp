@@ -1,8 +1,8 @@
 {
     "name":"Weather Web App",
     "short_name":"WeatherWebapp",
-    "start_url":"/",
-    "scope":".",
+    "start_url":".",
+    "scope":"/",
     "display":"standalone",
     "background_color":"#FFE9D2",
     "theme_color":"#ffe14c",
