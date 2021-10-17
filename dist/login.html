@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathwer WebApp Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="js/login.js" type="module"></script>
+    
+</head>
+<body>
+ <div class="login_container">
+     <section class="login_content">
+         <!-- <p>hello from login</p> -->
+         <div class="hero">
+           <div class="upper_hero">
+               <div class="icon">
+                   <i class="fas fa-user"></i>
+               </div>
+            <h1>Login</h1>
+           </div>            
+           <div class="lower_hero">
+               <form role="log" id="login__form" method="post">
+                   <div class="form_input">
+                       <span class="form_icon">
+                        <i class="fas fa-envelope"></i>
+                       </span>
+                       <span class="form__input">
+                           <input type="email" placeholder="Email" id="login__email" required>
+                       </span>
+                   </div>
+                   <div class="form_input">
+                       <span class="form_icon">
+                        <i class="fas fa-unlock"></i>
+                       </span>
+                       <span class="form__input">
+                           <input type="password" placeholder="Password" id="login__password" required>
+                       </span>
+                   </div>
+                   <h1 id="error_message" class="error_message">password is incorrect</h1>
+                   <button class="form_btn" id="login__btn" type="submit">Login</button>
+                   <p>Don't have an account? <span><a href="signup.html">Sign Up</a></span> </p>
+               </form>
+           </div>            
+         </div>
+     </section>
+    </div>
+    <script src="./app.js"></script>
+    </body>
+</html>

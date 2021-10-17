@@ -22,7 +22,7 @@ import {
 document.addEventListener("DOMContentLoaded", () => {
   let obj = sessionStorage.getItem("authUser");
   if (obj == null) {
-    window.location = "index.html";
+    window.location = "login.html";
   }
 });
 

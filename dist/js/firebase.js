@@ -20,7 +20,7 @@ export const Login = async (email, password) => {
       let user = userCredential.user;
       const obj = { id: user.uid };
       sessionStorage.setItem("authUser", JSON.stringify(obj));
-      window.location = "dashboard.html";
+      window.location = "index.html";
     })
     .catch((error) => {
       var errorCode = error.code;
@@ -44,7 +44,7 @@ export const SignUp = async (username, email, password) => {
       });
       const obj = { id: user.uid };
       sessionStorage.setItem("authUser", JSON.stringify(obj));
-      window.location = "dashboard.html";
+      window.location = "index.html";
     })
     .catch((error) => {
       var errorCode = error.code;
@@ -63,7 +63,7 @@ export const logout = async () => {
     .then(() => {
       console.log("User logout");
       sessionStorage.removeItem("authUser");
-      window.location = "index.html";
+      window.location = "login.html";
     })
     .catch((err) => {
       console.log(err.message);
