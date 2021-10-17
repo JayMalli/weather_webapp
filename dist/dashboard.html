@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="manifest" href="./manifest.json" />    
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
     <script src="js/main.js" type="module"></script>
@@ -78,7 +79,8 @@
           class="button"
           title="Get Location"
           aria-label="Get the current weather conditions for your current location"
-        >
+           
+          >
           <i class="fas fa-map-marker-alt"></i>
           <i class="fas fa-sync fa-spin none"></i>
         </button>
@@ -143,6 +145,7 @@
       </section>
       <p id="confirmation" class="offscreen" aria-live="assertive"></p>
     </main>
+    <script src="./app.js"></script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

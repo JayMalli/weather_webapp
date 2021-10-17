@@ -137,6 +137,7 @@
       grid-row: 4 / span 1;
       grid-column: 1 / span 4;
       padding-top: 0.5rem;
+      text-align: center;
       @include maxq(360px) {
         margin-top: 1rem;
       }
